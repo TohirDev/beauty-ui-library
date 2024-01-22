@@ -1,26 +1,15 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
-import Card from "./components/Card";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <Card />
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
   );
 }
 
