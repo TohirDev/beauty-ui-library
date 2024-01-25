@@ -1,5 +1,12 @@
+import Navbar from "../components/Navbar";
+
 const Blog = () => {
-  return <h1>blog</h1>;
+  return (
+    <>
+      <Navbar />
+      <h1>blog</h1>
+    </>
+  );
 };
 
 export default Blog;

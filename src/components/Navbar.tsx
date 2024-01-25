@@ -1,36 +1,40 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import Container from "./Container";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <nav className="flex items-center justify-between font-open-sans py-5">
         <h1>logo</h1>
         <ul className="flex items-center justify-between">
-          <li className="mx-5 nav-link nav-link-fade-up">
-            <span className="font-bold mr-2">01</span>
-            <NavLink to={"/"}>
+          <Link to={"/"}>
+            <li className="mx-5 nav-link nav-link-fade-up">
+              <span className="font-bold mr-2">01</span>
+
               home
-            </NavLink>
-          </li>
-          <li className="mx-5 nav-link nav-link-fade-up">
-            <span className="font-bold mr-2">02</span>
-            <NavLink to={"blog"}>
+            </li>
+          </Link>
+          <Link to={"/blog"}>
+            <li className="mx-5 nav-link nav-link-fade-up">
+              <span className="font-bold mr-2">02</span>
+
               writing
-            </NavLink>
-          </li>
-          <li className="mx-5 nav-link nav-link-fade-up">
-            <span className="font-bold mr-2">03</span>
-            <NavLink to={"/contact"}>
+            </li>
+          </Link>
+          <Link to={"/contact"}>
+            <li className="mx-5 nav-link nav-link-fade-up">
+              <span className="font-bold mr-2">03</span>
+
               contact
-            </NavLink>
-          </li>
-          <li className="mx-5 nav-link nav-link-fade-up">
-            <span className="font-bold mr-2">04</span>
-            <NavLink to={"/about"}>
+            </li>
+          </Link>
+          <Link to={"/about"}>
+            <li className="mx-5 nav-link nav-link-fade-up">
+              <span className="font-bold mr-2">04</span>
               about
-            </NavLink>
-          </li>
+            </li>
+          </Link>
           <li className="mx-5">
             <div className="bg-[silver] w-[50px] h-[50px] rounded-[50%] grid place-items-center	">
             </div>
