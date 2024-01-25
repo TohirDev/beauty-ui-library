@@ -1,8 +1,7 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Container from "./Container";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   return (
     <Container>
       <nav className="flex items-center justify-between font-open-sans py-5">
