@@ -363,6 +363,7 @@ template {
   display: inline-block;
   position: relative;
   opacity: 0.75;
+  cursor: pointer;
 }
 
 .nav-link:hover {
