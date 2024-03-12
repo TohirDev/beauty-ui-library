@@ -10,21 +10,18 @@ const Navbar = () => {
           <Link to={"/"}>
             <li className="mx-5 nav-link nav-link-fade-up">
               <span className="font-bold mr-2">01</span>
-
               home
             </li>
           </Link>
           <Link to={"/blog"}>
             <li className="mx-5 nav-link nav-link-fade-up">
               <span className="font-bold mr-2">02</span>
-
               writing
             </li>
           </Link>
           <Link to={"/contact"}>
-            <li className="mx-5 nav-link nav-link-fade-up">
+            <li className="mx-5 nav-link na-v-linkfade-up">
               <span className="font-bold mr-2">03</span>
-
               contact
             </li>
           </Link>
@@ -35,8 +32,7 @@ const Navbar = () => {
             </li>
           </Link>
           <li className="mx-5">
-            <div className="bg-[silver] w-[50px] h-[50px] rounded-[50%] grid place-items-center	">
-            </div>
+            <div className="bg-[silver] w-[50px] h-[50px] rounded-[50%] grid place-items-center	"></div>
           </li>
         </ul>
       </nav>
