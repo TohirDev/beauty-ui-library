@@ -1,7 +1,12 @@
-import { ComingSoon } from "./pages/ComingSoon";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./routes";
 
 function App() {
-  return <ComingSoon />;
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
 
 export default App;
