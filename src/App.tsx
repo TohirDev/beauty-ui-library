@@ -1,24 +1,24 @@
-import { BrowserRouter } from "react-router-dom";
 import { Router } from "./routes";
+import { ThemeProvider } from "./components/theme-provider";
+import Container from "./components/Container";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { Layout } from "./layout";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <ThemeProvider defaultTheme="system">
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <Container className="flex-1 flex">
+          <Layout>
+            <Router />
+          </Layout>
+        </Container>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
 export default App;
-
-// import { Route, Routes } from "react-router-dom";
-// import HomePage from "./pages/Home";
-// import AboutPage from "./pages/AboutPage";
-// import Blog from "./pages/Writing";
-// import Contact from "./pages/Contact";
-// <Routes>
-//   <Route path="/" element={<HomePage />} />
-//   <Route path="/about" element={<AboutPage />} />
-//   <Route path="/blog" element={<Blog />} />
-//   <Route path="/contact" element={<Contact />} />
-// </Routes>
