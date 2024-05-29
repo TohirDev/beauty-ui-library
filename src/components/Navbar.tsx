@@ -3,6 +3,7 @@ import Container from "./Container";
 import { ModeToggle } from "./mode-toggle";
 import { NavLink } from "react-router-dom";
 import Icon from "@/assets/icons8-b-48.png";
+import { Typography } from "beauty-ui-components";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,20 +42,22 @@ export const Navbar = () => {
               marginTop: "-5px",
             }}
           />
-          <h2
+          <Typography
+            variant="h2"
             style={{ marginLeft: "-7px", marginBottom: "-10px" }}
-            className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0"
           >
             eauty/ui.
-          </h2>
+          </Typography>
         </div>
         <ul className="flex gap-4 items-center">
           <NavLink to={"/docs"}>
-            <li>Docs</li>
+            <Typography variant="large">Docs</Typography>
           </NavLink>
-          <li>Components</li>
-          <li>Blog</li>
-          <li>GitHub</li>
+          <NavLink to={"/docs/components"}>
+            <Typography variant="large">Components</Typography>
+          </NavLink>
+          <Typography variant="large">Blog</Typography>
+          <Typography variant="large">GitHub</Typography>
         </ul>
         <ModeToggle />
       </Container>
