@@ -1,11 +1,100 @@
-import { BreadcrumbDemo } from "@/components/BreadCrumb";
+import { BreadCrumb } from "@/components/BreadCrumb";
+import { changeTitle } from "@/globals";
 
 function Docs() {
+  changeTitle("Introduction | Beauty/ui");
   return (
     <div>
-      <BreadcrumbDemo titles={["Home", "Docs"]} />
+      <BreadCrumb titles={["Docs", "Introduction"]} />
       <h1>Docs</h1>
-
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
+      <h1>Docs</h1>
       <h1>Docs</h1>
     </div>
   );
