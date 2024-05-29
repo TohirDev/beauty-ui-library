@@ -1,5 +1,8 @@
 import { Navigate } from "react-router-dom";
 import Docs from "./tui/docs";
+import { DocsInstallation } from "./tui/docs/installation";
+import { DocsButton } from "./tui/docs/button";
+import { DocsTypography } from "./tui/docs/typography";
 
 export const sideNavDetails = [
   {
@@ -7,35 +10,32 @@ export const sideNavDetails = [
     highlight: true,
   },
   {
-    title: "Docs",
+    title: "Introduction",
     path: "docs",
     element: <Docs />,
   },
   {
-    title: "Accord",
-    path: "/docs/accord",
-    element: <h1>adcc</h1>,
+    title: "Installation",
+    path: "/docs/installation",
+    element: <DocsInstallation />,
   },
-  {
-    title: "Typo",
-    path: "/docs/typo",
-    element: <h1>typo</h1>,
-  },
+
   {
     title: "Components",
     highlight: true,
     path: "/docs/components",
-    element: <Navigate to="/docs/components/badge" />,
-  },
-  {
-    title: "Badge",
-    path: "/docs/components/badge",
-    element: <h1>bagge</h1>,
+    element: <Navigate to="/docs/components/button" />,
   },
   {
     title: "Button",
     path: "/docs/components/button",
-    element: <h1>btton</h1>,
+    element: <DocsButton />,
+    new: true,
+  },
+  {
+    title: "Typography",
+    path: "/docs/components/typography",
+    element: <DocsTypography />,
     new: true,
   },
 ];

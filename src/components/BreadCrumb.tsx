@@ -6,7 +6,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-export function BreadcrumbDemo({ titles }: { titles: string[] }) {
+export function BreadCrumb({ titles }: { titles: string[] }) {
   return (
     <Breadcrumb>
       <BreadcrumbList>

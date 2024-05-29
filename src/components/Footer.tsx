@@ -1,4 +1,6 @@
+import { Typography } from "beauty-ui-components";
 import Container from "./Container";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -10,8 +12,11 @@ export const Footer = () => {
         <Container>
           <div className="w-full p-4">
             <div className="px-5 py-2">
-              <p className="text-base text-zinc-800 dark:text-zinc-50">
-                © 2024 ThePrimeReacts. All rights reserved.
+              <p>
+                <Typography variant="small" sx={{ margin: "0 5px" }}>
+                  © 2024 <NavLink to={"/"}>ThePrimeReacts</NavLink>. All
+                  rights reserved.
+                </Typography>{" "}
               </p>
             </div>
           </div>
