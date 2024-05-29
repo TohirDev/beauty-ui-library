@@ -1,5 +1,6 @@
-import { sideNavDetails } from "@/constants";
 import { NavLink } from "react-router-dom";
+import { sideNavDetails } from "@/constants";
+import { Typography } from "beauty-ui-components";
 
 export const SideNav = () => {
   return (
@@ -8,17 +9,37 @@ export const SideNav = () => {
         return (
           <div key={item.title}>
             {item.highlight ? (
-              <h4 className="text-md font-semibold my-1">{item.title}</h4>
+              <Typography variant="large">{item.title}</Typography>
             ) : (
               <NavLink to={item.path || "#"} key={item.title}>
-                <h4 className="text-md text-muted-foreground my-1">
+                <Typography
+                  variant="muted"
+                  sx={{
+                    fontSize: "18px",
+                    margin: "10px 0",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
                   {item.title}
                   {item.new && (
-                    <span className="text-[13px] bg-[#B6F837] text-black ml-1 px-2 rounded-md text-center">
+                    <Typography
+                      variant="small"
+                      sx={{
+                        marginLeft: "5px",
+                        backgroundColor: "#B6F837",
+                        color: "black",
+
+                        borderRadius: "0.375rem",
+                        textAlign: "center",
+                        display: "block",
+                        padding: "0.25rem 0.5rem",
+                      }}
+                    >
                       New
-                    </span>
+                    </Typography>
                   )}
-                </h4>
+                </Typography>
               </NavLink>
             )}
           </div>
