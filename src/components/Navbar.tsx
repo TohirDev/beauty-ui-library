@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Container from "./Container";
-import { ModeToggle } from "./mode-toggle";
 import { NavLink } from "react-router-dom";
 import Icon from "@/assets/icons8-b-48.png";
 import { Typography } from "beauty-ui-components";
@@ -59,7 +58,7 @@ export const Navbar = () => {
           <Typography variant="large">Blog</Typography>
           <Typography variant="large">GitHub</Typography>
         </ul>
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </Container>
     </div>
   );
