@@ -38,7 +38,6 @@ export const Navbar = () => {
             alt="logo"
             style={{
               width: "40px",
-              marginTop: "-5px",
             }}
           />
           <Typography

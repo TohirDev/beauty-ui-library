@@ -1,6 +1,6 @@
 import { BreadCrumb } from "@/components/BreadCrumb";
 import { changeTitle } from "@/globals";
-import { Typography } from "beauty-ui-components";
+import { Button, Typography } from "beauty-ui-components";
 
 export const DocsInstallation = () => {
   changeTitle("Installation | Beauty/ui");
@@ -22,6 +22,10 @@ export const DocsInstallation = () => {
       >
         npm install beauty-ui-components
       </code>
+      <Typography variant="h1">PUL</Typography>
+      <Button disabled variant="default">
+        Disabled
+      </Button>
     </div>
   );
 };
