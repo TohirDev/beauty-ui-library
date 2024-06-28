@@ -3,6 +3,7 @@ import Docs from "./tui/docs";
 import { DocsInstallation } from "./tui/docs/installation";
 import { DocsButton } from "./tui/docs/button";
 import { DocsTypography } from "./tui/docs/typography";
+import { DocsCard } from "./tui/docs/card";
 
 export const sideNavDetails = [
   {
@@ -30,12 +31,16 @@ export const sideNavDetails = [
     title: "Button",
     path: "/docs/components/button",
     element: <DocsButton />,
-    new: true,
   },
   {
     title: "Typography",
     path: "/docs/components/typography",
     element: <DocsTypography />,
+  },
+  {
+    title: "Card",
+    path: "/docs/components/card",
+    element: <DocsCard />,
     new: true,
   },
 ];

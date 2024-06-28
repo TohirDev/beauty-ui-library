@@ -4,6 +4,10 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import React from "react";
 
+
+// this comment is written in neovim : ok this is it and im learning neovimg
+// and updated using neovim
+// thisijs
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -11,3 +15,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+

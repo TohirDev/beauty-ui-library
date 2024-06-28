@@ -9,7 +9,7 @@ export const Demo: React.FC<IDemoProps> = ({ children, code }) => {
   return (
     <div
       style={{
-        maxWidth: "500px",
+        minWidth: "500px",
         width: "100%",
         marginTop: "40px",
       }}
