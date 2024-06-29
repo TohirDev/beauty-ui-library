@@ -20,7 +20,7 @@ export const Demo: React.FC<IDemoProps> = ({ children, code }) => {
           height: "100% ",
           border: "1px solid #eee",
           borderRadius: "5px 5px 0 0",
-          padding: "60px 0",
+          padding: "60px 20px",
           backgroundColor: "#fff",
           display: "grid",
           placeItems: "center",

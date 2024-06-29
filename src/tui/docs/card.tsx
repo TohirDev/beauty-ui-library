@@ -15,7 +15,7 @@ import {
 export const DocsCard = () => {
   changeTitle("Card | Beuaty/ui");
   const code = `
-  <Card sx={{ width: "500px", margin: "20px" }}>
+  <Card sx={{ width: "500px" }}>
     <CardHeader>
       <CardTitle>Porsche 911</CardTitle>
       <CardDescription>
@@ -44,7 +44,7 @@ export const DocsCard = () => {
         Card
       </Typography>
       <Demo code={code}>
-        <Card sx={{ width: "500px", margin: "20px" }}>
+        <Card sx={{ width: "500px" }}>
           <CardHeader>
             <CardTitle>Porsche 911</CardTitle>
             <CardDescription>
