@@ -11,6 +11,7 @@ const CodeBlock = ({ code }: { code: string }) => {
       setCopy(false);
     }, 3000);
   };
+
   return (
     <div
       className="max-w-2x1 min-w-[25rem] bg-[#3a404d]

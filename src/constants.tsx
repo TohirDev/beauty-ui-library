@@ -5,6 +5,8 @@ import { DocsButton } from "./tui/docs/button";
 import { DocsTypography } from "./tui/docs/typography";
 import { DocsCard } from "./tui/docs/card";
 import { DocsInput } from "./tui/docs/input";
+import { DocsCheckbox } from "./tui/docs/checkbox";
+import { DocsLabel } from "./tui/docs/label";
 
 export const sideNavDetails = [
   {
@@ -48,6 +50,18 @@ export const sideNavDetails = [
     title: "Input",
     path: "/docs/components/input",
     element: <DocsInput />,
+    new: true,
+  },
+  {
+    title: "Checkbox",
+    path: "/docs/components/checkbox",
+    element: <DocsCheckbox />,
+    new: true,
+  },
+  {
+    title: "Label",
+    path: "/docs/components/label",
+    element: <DocsLabel />,
     new: true,
   },
 ];
