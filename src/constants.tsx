@@ -7,6 +7,7 @@ import { DocsCard } from "./tui/docs/card";
 import { DocsInput } from "./tui/docs/input";
 import { DocsCheckbox } from "./tui/docs/checkbox";
 import { DocsLabel } from "./tui/docs/label";
+import { DocsSwitch } from "./tui/docs/switch";
 
 export const sideNavDetails = [
   {
@@ -62,6 +63,12 @@ export const sideNavDetails = [
     title: "Label",
     path: "/docs/components/label",
     element: <DocsLabel />,
+    new: true,
+  },
+  {
+    title: "Switch",
+    path: "/docs/components/switch",
+    element: <DocsSwitch />,
     new: true,
   },
 ];

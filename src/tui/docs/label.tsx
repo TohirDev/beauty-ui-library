@@ -13,7 +13,7 @@ export const DocsLabel: React.FC = () => {
         Label
       </Typography>
       <Typography variant="p" sx={{ marginTop: "10px" }}>
-        Styles for headings, paragraphs and more.
+        Renders an accessible label associated with controls.
       </Typography>
 
       <Typography variant="h3" sx={{ marginTop: "40px" }}>

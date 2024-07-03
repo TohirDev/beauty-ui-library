@@ -14,12 +14,12 @@ export const DocsCheckbox: React.FC = () => {
 
   return (
     <div>
-      <BreadCrumb titles={["Docs", "Label"]} />
+      <BreadCrumb titles={["Docs", "Checkbox"]} />
       <Typography variant="h2" sx={{ marginTop: "10px" }}>
         Checkbox
       </Typography>
       <Typography variant="p" sx={{ marginTop: "10px" }}>
-        Styles for headings, paragraphs and more.
+        Checkboxes allow the user to select one or more items from a set.
       </Typography>
 
       <Typography variant="h3" sx={{ marginTop: "40px" }}>
