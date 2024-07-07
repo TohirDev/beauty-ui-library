@@ -45,13 +45,11 @@ export const sideNavDetails = [
     title: "Card",
     path: "/docs/components/card",
     element: <DocsCard />,
-    new: true,
   },
   {
     title: "Input",
     path: "/docs/components/input",
     element: <DocsInput />,
-    new: true,
   },
   {
     title: "Checkbox",
