@@ -55,7 +55,6 @@ export const sideNavDetails = [
     title: "Checkbox",
     path: "/docs/components/checkbox",
     element: <DocsCheckbox />,
-    new: true,
   },
   {
     title: "Label",
