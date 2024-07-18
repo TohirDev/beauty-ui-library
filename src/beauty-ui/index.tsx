@@ -12,6 +12,4 @@ function BeautyUI() {
   );
 }
 
-//comment
-
 export default BeautyUI;
