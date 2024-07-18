@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\"  \"npm run fmt\"  \"npm run dlint\"",
+    "dev": "concurrently \"vite \"  \"npm run fmt\"  \"npm run dlint\"",
     "fmt": "deno fmt --watch",
     "dlint": "deno lint --watch",
     "build": "tsc && vite build",

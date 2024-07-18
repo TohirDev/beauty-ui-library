@@ -1,7 +1,7 @@
 import { SideNav } from "@/components/Sidenav";
 import { Outlet } from "react-router-dom";
 
-function Tui() {
+function BeautyUI() {
   return (
     <div className="flex">
       <SideNav />
@@ -12,4 +12,4 @@ function Tui() {
   );
 }
 
-export default Tui;
+export default BeautyUI;

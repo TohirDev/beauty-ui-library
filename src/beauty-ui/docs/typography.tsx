@@ -1,7 +1,7 @@
 import { BreadCrumb } from "@/components/BreadCrumb";
 import { Demo } from "@/components/demo";
 import { changeTitle } from "@/globals";
-import { Typography } from "beauty-ui-components";
+import { Button, Typography, tot } from "beauty-ui-components";
 
 export const DocsTypography = () => {
   changeTitle("Typography | Beauty/ui");
@@ -21,6 +21,7 @@ export const DocsTypography = () => {
       <Typography variant="h2" sx={{ marginTop: "10px" }}>
         Typography
       </Typography>
+      <Button onClick={() => tot(2)}>TOT</Button>
       <Typography variant="p" sx={{ marginTop: "10px" }}>
         Styles for headings, paragraphs and more.
       </Typography>

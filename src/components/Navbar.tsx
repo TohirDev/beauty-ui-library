@@ -54,8 +54,12 @@ export const Navbar = () => {
           <NavLink to={"/docs/components"}>
             <Typography variant="large">Components</Typography>
           </NavLink>
-          <Typography variant="large">Blog</Typography>
-          <Typography variant="large">GitHub</Typography>
+          <NavLink to={"/docs/blog"}>
+            <Typography variant="large">Blog</Typography>
+          </NavLink>
+          <NavLink target="_blank" to={"https://github.com/tohirdev"}>
+            <Typography variant="large">GitHub</Typography>
+          </NavLink>
         </ul>
         {/* <ModeToggle /> */}
       </Container>

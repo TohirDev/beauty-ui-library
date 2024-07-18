@@ -1,13 +1,14 @@
 import { Navigate } from "react-router-dom";
-import Docs from "./tui/docs";
-import { DocsInstallation } from "./tui/docs/installation";
-import { DocsButton } from "./tui/docs/button";
-import { DocsTypography } from "./tui/docs/typography";
-import { DocsCard } from "./tui/docs/card";
-import { DocsInput } from "./tui/docs/input";
-import { DocsCheckbox } from "./tui/docs/checkbox";
-import { DocsLabel } from "./tui/docs/label";
-import { DocsSwitch } from "./tui/docs/switch";
+import Docs from "./beauty-ui/docs";
+import { DocsInstallation } from "./beauty-ui/docs/installation";
+import { DocsButton } from "./beauty-ui/docs/button";
+import { DocsTypography } from "./beauty-ui/docs/typography";
+import { DocsCard } from "./beauty-ui/docs/card";
+import { DocsInput } from "./beauty-ui/docs/input";
+import { DocsCheckbox } from "./beauty-ui/docs/checkbox";
+import { DocsLabel } from "./beauty-ui/docs/label";
+import { DocsSwitch } from "./beauty-ui/docs/switch";
+import { DocsBreadcrumb } from "./beauty-ui/docs/breadcrumb";
 
 export const sideNavDetails = [
   {
@@ -60,12 +61,16 @@ export const sideNavDetails = [
     title: "Label",
     path: "/docs/components/label",
     element: <DocsLabel />,
-    new: true,
   },
   {
     title: "Switch",
     path: "/docs/components/switch",
     element: <DocsSwitch />,
+  },
+  {
+    title: "Breadcrumb",
+    path: "/docs/components/breadcrumb",
+    element: <DocsBreadcrumb />,
     new: true,
   },
 ];

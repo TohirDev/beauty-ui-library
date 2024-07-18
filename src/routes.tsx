@@ -1,8 +1,6 @@
 import { Navigate, useRoutes } from "react-router-dom";
-import TStore from "./tstore";
-import Tui from "./tui";
 import { sideNavDetails } from "./constants";
-
+import BeautyUI from "@/beauty-ui/index";
 export const Router = () => {
   return useRoutes([
     {
@@ -11,12 +9,8 @@ export const Router = () => {
     },
     {
       path: "/",
-      element: <Tui />,
+      element: <BeautyUI />,
       children: sideNavDetails,
-    },
-    {
-      path: "/tstore",
-      element: <TStore />,
     },
   ]);
 };
